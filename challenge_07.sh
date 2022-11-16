@@ -9,23 +9,23 @@
 
 echo "Computer Name"
 
-    hostname
+    lshw | head -1
     
 echo "CPU"
 
-    lshw | grep "cpu" -A 7 | head -7 
+    lshw | grep "*-cpu" -A 7  
 
 echo "Ram"
 
-    lshw | grep "memory" -A 4 | head -4 
+    lshw | grep "*-memory" -A 4 
 
 echo "Dispay Adapter"
 
-    lshw | grep "display" -A 13 | head -13 
+    lshw | grep "*-display" -A 13  
 
 echo "Network Adapter"
 
-    lshw | grep "network" -A 15 | head -16 
+    lshw | grep "*-network" -A 15 
 
 
 
