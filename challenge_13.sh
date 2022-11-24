@@ -42,6 +42,8 @@ function2
 function3
 function4
 
+nano $file
+
 ## END
 
 
